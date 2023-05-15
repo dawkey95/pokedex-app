@@ -3,25 +3,42 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+	/* GREY SCALE COLORS */
+	--eerie-gray: #1d1d1d;
+	--grayscale-medium: #666666;
+	--grayscale-light: #e0e0e0;
+	--white: #ffffff;
+	--black: #141d2f;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+	/* PRIMARY COLORS */
+	--light-blue: #0079ff;
+	--hover-btn: #60abff;
+	--primary: #dc0a2d;
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+	/* TYPE COLORS */
+	--bug: #a7b723;
+	--dark: #75574c;
+	--dragon: #7037ff;
+	--electric: #f9cf30;
+	--fairy: #e69eac;
+	--fighting: #c12239;
+	--fire: #f57d31;
+	--flying: #a891ec;
+	--ghost: #70559b;
+	--normal: #aaa67f;
+	--grass: #74cb48;
+	--ground: #dec16b;
+	--ice: #9ad6df;
+	--poison: #a43e9e;
+	--psychic: #fb5584;
+	--rock: #b69e31;
+	--steel: #b7b9d0;
+	--water: #6493eb;
+
+	/* BOX SHADOWS */
+	--primary-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+	--ball-shadow: 0px 0px 50px -10px rgb(247, 242, 172);
+	--inner-shadow: inset 0px 1px 3px 1px rgba(0, 0, 0, 0.25);
+	--drop-shadow-light: 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
+	--drop-shadow-heavy: 0px 3px 12px 3px rgba(0, 0, 0, 0.2);
 }

@@ -1,18 +1,57 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
-  theme: {
-    extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
-    },
-  },
-  plugins: [],
-}
+	darkMode: 'class',
+	content: [
+		'./pages/**/*.{js,ts,jsx,tsx,mdx}',
+		'./components/**/*.{js,ts,jsx,tsx,mdx}',
+		'./app/**/*.{js,ts,jsx,tsx,mdx}',
+	],
+	theme: {
+		extend: {
+			colors: {
+				// GRAYSCALE
+				eerieGray: 'var(--eerie-gray)',
+				grayscaleLight: 'var(--grayscale-light)',
+				grayscaleMedium: 'var(--grayscale-medium)',
+				white: 'var(--white)',
+				black: 'var(--black)',
+
+				// PRIMARY
+				primary: 'var(--primary)',
+
+				// TYPES
+				bug: 'var(--bug)',
+				dark: 'var(--dark)',
+				dragon: 'var(--dragon)',
+				electric: 'var(--electric)',
+				fairy: 'var(--fairy)',
+				fighting: 'var(--fighting)',
+				fire: 'var(--fire)',
+				flying: 'var(--flying)',
+				ghost: 'var(--ghost)',
+				normal: 'var(--normal)',
+				grass: 'var(--grass)',
+				ground: 'var(--ground)',
+				ice: 'var(--ice)',
+				poison: 'var(--poison)',
+				psychic: 'var(--psychic)',
+				rock: 'var(--rock)',
+				steel: 'var(--steel)',
+				water: 'var(--water)',
+			},
+
+			fontFamily: {
+				mono: ['var(--font-inter)'],
+			},
+
+			boxShadow: {
+				primaryShadow: 'var(--primary-shadow)',
+				ballShadow: 'var(--ball-shadow)',
+				innerShadow: 'var(--inner-shadow)',
+				dropShadowLight: 'var(--drop-shadow-light)',
+				dropShadowHeavy: 'var(--drop-shadow-heavy)',
+			},
+		},
+	},
+	plugins: [],
+};

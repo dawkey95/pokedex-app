@@ -10,11 +10,11 @@ module.exports = {
 		extend: {
 			colors: {
 				// GRAYSCALE
-				eerieGray: 'var(--eerie-gray)',
+				darkGray: 'var(--dark-gray)',
 				grayscaleLight: 'var(--grayscale-light)',
 				grayscaleMedium: 'var(--grayscale-medium)',
+				background: 'var(--background)',
 				white: 'var(--white)',
-				black: 'var(--black)',
 
 				// PRIMARY
 				primary: 'var(--primary)',
@@ -41,7 +41,7 @@ module.exports = {
 			},
 
 			fontFamily: {
-				mono: ['var(--font-inter)'],
+				mono: ['var(--font-poppins)'],
 			},
 
 			boxShadow: {

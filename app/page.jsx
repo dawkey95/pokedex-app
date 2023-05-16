@@ -6,8 +6,8 @@ import { motion } from 'framer-motion';
 
 export default function Home() {
 	return (
-		<main className='min-h-screen bg-eerieGray'>
-			<div className='flex flex-col items-center justify-center gap-16 pt-24'>
+		<div className='min-h-screen'>
+			<div className='flex flex-col items-center justify-center gap-5 pt-24'>
 				<Image
 					src={'/images/pokemon-title.png'}
 					alt='pokémon logo'
@@ -26,12 +26,13 @@ export default function Home() {
 							width={125}
 							whileHover={{
 								scale: 1.2,
-								transition: { duration: 0.8, ease: 'easeInOut' },
+								transition: { duration: 1, ease: 'easeInOut' },
+								rotate: 360,
 							}}
 						/>
 					</Link>
 				</div>
 			</div>
-		</main>
+		</div>
 	);
 }

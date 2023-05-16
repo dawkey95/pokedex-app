@@ -1,10 +1,12 @@
 import React from 'react';
+import Nav from '@/components/Nav';
 
-const PokedexLayout = () => {
+const PokedexLayout = ({children}) => {
 	return (
-		<section>
-			<h1>Pokédex</h1>
-		</section>
+		<div className='min-h-screen bg-primary'>
+			<Nav />
+			{children}
+		</div>
 	);
 };
 
